@@ -1,0 +1,29 @@
+[
+  {
+    "role": "Flutter Developer",
+    "organisation": "SoftThrive",
+    "startDate": "Oct, 2023",
+    "endDate": "Dec, 2023",
+    "experiences": ["Building Complex UI", "Integrating Firebase or NodeJS"],
+    "imageSrc": "history/softthrive.png"
+  },
+  {
+    "role": "Java UI Basics",
+    "organisation": "POF",
+    "startDate": "July, 2023",
+    "endDate": "Sept, 2023",
+    "experiences": ["Worked on OOP Concepts", "Designed basic UI"],
+    "imageSrc": "history/pof.png"
+  },
+  {
+    "role": "Flutter Intern",
+    "organisation": "CapregSoft",
+    "startDate": "July, 2022",
+    "endDate": "Sept, 2022",
+    "experiences": [
+      "Worked on UI Building",
+      "Firebase and API's Integration"
+    ],
+    "imageSrc": "history/capregsoft.png"
+  }
+]
