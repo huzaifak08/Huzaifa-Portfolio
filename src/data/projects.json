@@ -1,26 +1,26 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "title": "Himalaya Portal System",
+    "imageSrc": "projects/Project Himalaya.png",
+    "description": "This was our Final Year Project and was a Student Management System.",
+    "skills": ["Flutter", "React", "Node","MongoDB","AWS"],
+    "demo": "https://youtu.be/wrzAkDEYvDc",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "title": "Music Player",
+    "imageSrc": "projects/Project Music.png",
+    "description": "Music Player which will play the music and uses iTunes API.",
+    "skills": ["Flutter", "Http"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/huzaifak08/Music-Player-Flutter"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "title": "Save Me",
+    "imageSrc": "projects/Project SaveMe.png",
+    "description": "App which uses Phone Auth and user can store credentials of his/her accounts. Also deployed on Play Store.",
+    "skills": ["Flutter", "Firebase"],
+    "demo": "https://play.google.com/store/apps/details?id=com.softmostro.password_saver",
     "source": "https://www.github.com"
   }
 ]
