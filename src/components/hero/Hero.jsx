@@ -13,7 +13,7 @@ function Hero() {
           Comsats University. I've strong problem solving skills and love to
           learn new things in my field and currently learning ReactJS.
         </p>
-        <div>
+        <div className={styles.buttons}>
           <a href="mailto:hk7928042@gmail.com" className={styles.contactBtn}>
             Contact Me
           </a>

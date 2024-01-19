@@ -39,6 +39,11 @@
   margin-bottom: 52px;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
@@ -108,5 +113,9 @@
   }
   .content {
     align-items: center;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 13px;
   }
 }
