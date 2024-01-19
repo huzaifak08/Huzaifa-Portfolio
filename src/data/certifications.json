@@ -2,7 +2,7 @@
     {
       "title": "Flutter",
       "imageSrc": "certificates/flutterE.png",
-      "logo":"certificates/coursera.png",
+      "logo":"certificates/linkedin.png",
       "organization": "LinkedIn",
       "source": "https://www.linkedin.com/learning/certificates/4e0ea053f2836967a765869e92e9ec3e1447d3f6530fe6bd34632b41b1d1747e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BgLjuUr2dSje8Vo9IjuPQ%2BA%3D%3D"
     },
@@ -16,8 +16,8 @@
     {
       "title": "NodeJs",
       "imageSrc": "certificates/node.png",
-      "logo":"certificates/coursera.png",
-      "organization": "Coursera",
+      "logo":"certificates/linkedin.png",
+      "organization": "LinkedIn",
       "source": "https://www.linkedin.com/learning/certificates/b74abf86a4302f6df7d9e790281a243d9cef5b258cbd56c7f07850a101936099?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BgLjuUr2dSje8Vo9IjuPQ%2BA%3D%3D"
     },
     {
@@ -52,14 +52,14 @@
       "title": "Flutter",
       "imageSrc": "certificates/flutter2.png",
       "logo":"certificates/simpli.png",
-      "organization": "Coursera",
+      "organization": "Simpli L",
       "source": "https://lms.simplilearn.com/courses/4951/Introduction-to-Flutter-Course-Online/certificate/download-skillup"
     },
     {
       "title": "HTML",
       "imageSrc": "certificates/html.png",
       "logo":"certificates/simpli.png",
-      "organization": "Coursera",
+      "organization": "Simpli L",
       "source": "https://lms.simplilearn.com/courses/4496/Introduction-to-HTML/certificate/download-skillup"
     }
   ]

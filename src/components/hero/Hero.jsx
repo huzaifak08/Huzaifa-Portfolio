@@ -17,7 +17,10 @@ function Hero() {
           <a href="mailto:hk7928042@gmail.com" className={styles.contactBtn}>
             Contact Me
           </a>
-          <a href="Huzaifa Resume.pdf" className={styles.contactBtn}>
+          <a
+            href="https://drive.google.com/file/d/1Db60GWNclGgO1XvaOaA870k-gLxUVsBe/view?usp=drive_link"
+            className={styles.contactBtn}
+          >
             Download CV
           </a>
         </div>
