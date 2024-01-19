@@ -13,9 +13,14 @@ function Hero() {
           Comsats University. I've strong problem solving skills and love to
           learn new things in my field and currently learning ReactJS.
         </p>
-        <a href="mailto:hk7928042@gmail.com" className={styles.contactBtn}>
-          Contact Me
-        </a>
+        <div>
+          <a href="mailto:hk7928042@gmail.com" className={styles.contactBtn}>
+            Contact Me
+          </a>
+          <a href="Huzaifa Resume.pdf" className={styles.contactBtn}>
+            Download CV
+          </a>
+        </div>
       </div>
       <img
         src={getImageUrl("hero/heroImage.png")}
