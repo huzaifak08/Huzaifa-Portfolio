@@ -21,7 +21,7 @@ function Contact() {
             alt="Linkedin icon"
           />
           <a href="https://www.linkedin.com/in/huzaifak08/">
-            Huzaifa Khan(huzaifak08)
+            Huzaifa Khan (huzaifak08)
           </a>
         </li>
 

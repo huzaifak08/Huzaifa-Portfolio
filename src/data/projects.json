@@ -12,7 +12,7 @@
     "imageSrc": "projects/Project Music.png",
     "description": "Music Player which will play the music and uses iTunes API.",
     "skills": ["Flutter", "Http"],
-    "demo": "https://www.example.com",
+    "demo": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1692938820901584896",
     "source": "https://github.com/huzaifak08/Music-Player-Flutter"
   },
   {
@@ -21,6 +21,22 @@
     "description": "App which uses Phone Auth and user can store credentials of his/her accounts. Also deployed on Play Store.",
     "skills": ["Flutter", "Firebase"],
     "demo": "https://play.google.com/store/apps/details?id=com.softmostro.password_saver",
-    "source": "https://www.github.com"
+    "source": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1688474980673863680"
+  },
+  {
+    "title": "Lawyers Lot",
+    "imageSrc": "projects/LawyersLot.png",
+    "description": "App which uses phone auth and connects lawyers and clients through scheduled meeting.",
+    "skills": ["Flutter", "Firebase","Stripe"],
+    "demo": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1748411182096703488",
+    "source": "https://github.com/huzaifak08/"
+  },
+  {
+    "title": "One Planet Fuel Station",
+    "imageSrc": "projects/OnePlanet.png",
+    "description": "App which can be used to order fuel from any fuel station near you.",
+    "skills": ["Flutter", "Firebase","Google Maps","Stripe"],
+    "demo": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1688467524285415424",
+    "source": "https://github.com/huzaifak08/"
   }
 ]
