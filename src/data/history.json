@@ -1,10 +1,18 @@
 [
   {
     "role": "Flutter Developer",
+    "organisation": "GlaxIt",
+    "startDate": "Mar, 2024",
+    "endDate": "Continue...",
+    "experiences": ["Flutter","Firebase","NodeJS"],
+    "imageSrc": "history/glaxit.png"
+  },
+  {
+    "role": "Flutter Developer",
     "organisation": "SoftThrive",
     "startDate": "Oct, 2023",
     "endDate": "Dec, 2023",
-    "experiences": ["Building Complex UI", "Integrating Firebase or NodeJS"],
+    "experiences": ["Flutter","Firebase","NodeJS"],
     "imageSrc": "history/softthrive.png"
   },
   {
@@ -22,7 +30,7 @@
     "endDate": "Sept, 2022",
     "experiences": [
       "Worked on UI Building",
-      "Firebase and API's Integration"
+      "Firebase"
     ],
     "imageSrc": "history/capregsoft.png"
   }
