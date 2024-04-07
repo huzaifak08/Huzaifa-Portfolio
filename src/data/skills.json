@@ -40,6 +40,10 @@
     "imageSrc": "skills/bloc.png"
   },
   {
+    "title": "MySQL",
+    "imageSrc": "skills/sql.png"
+  },
+  {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png"
   },
