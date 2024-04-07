@@ -1,13 +1,5 @@
 [
   {
-    "title": "Fake Store Ecommerce",
-    "imageSrc": "projects/project.png",
-    "description": "This latest app uses fakestoreapi.com with beautiful and attractive UI",
-    "skills": ["Flutter", "API", "Git","CI/CD","MobX"],
-    "demo": "https://github.com/huzaifak08/Fake-Store/releases",
-    "source": "https://github.com/huzaifak08/Fake-Store"
-  },
-  {
     "title": "Himalaya Portal System",
     "imageSrc": "projects/Project Himalaya.png",
     "description": "This was our Final Year Project and was a Student Management System.",
