@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fake Store",
+    "imageSrc": "projects/FakeStore.png",
+    "description": "E-Commerce app which uses fakestoreapi.com",
+    "skills": ["Flutter", "Rest API","GitHub Actions","MobX"],
+    "demo": "https://drive.google.com/file/d/15nP8UjN7pme5xshklyYpYY2-7UeN_m9m/view?usp=sharing",
+    "source": "https://github.com/huzaifak08/Fake-Store"
+  },
+  {
     "title": "Himalaya Portal System",
     "imageSrc": "projects/Project Himalaya.png",
     "description": "This was our Final Year Project and was a Student Management System.",
