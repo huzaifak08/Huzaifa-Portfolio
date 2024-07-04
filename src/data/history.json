@@ -1,5 +1,13 @@
 [
   {
+    "role": "Full Stack Engineer",
+    "organisation": "QLU.ai",
+    "startDate": "June, 2024",
+    "endDate": "Cont...",
+    "experiences": ["Flutter","NodeJS","PostgreSQL"],
+    "imageSrc": "history/qlu.png"
+  },
+  {
     "role": "Flutter Developer",
     "organisation": "SoftThrive",
     "startDate": "Oct, 2023",
