@@ -18,8 +18,9 @@ function Hero() {
             Contact Me
           </a>
           <a
-            href="https://drive.google.com/file/d/1A__-q-LFRCbplvwhQK6QRM4efbufracx/view?usp=sharing"
+            href="https://drive.google.com/file/d/1h22rqMC0BmV-_JEKjOKxzQ-eYiC3Qt6y/view?usp=drive_link"
             className={styles.contactBtn}
+            target="_blank"
           >
             Download CV
           </a>
