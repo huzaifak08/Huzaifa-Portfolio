@@ -26,7 +26,7 @@ function Certifications() {
                   />
                   <p className={styles.logoText}>{certificate.organization}</p>
                 </div>
-                <a href={certificate.source} className={styles.openBtn}>
+                <a href={certificate.source} className={styles.openBtn} target="_blank">
                   Click to Open
                 </a>
               </div>
