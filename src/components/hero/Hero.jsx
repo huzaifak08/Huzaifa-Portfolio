@@ -18,7 +18,7 @@ function Hero() {
             Contact Me
           </a>
           <a
-            href="https://drive.google.com/file/d/1h22rqMC0BmV-_JEKjOKxzQ-eYiC3Qt6y/view?usp=drive_link"
+            href="https://drive.google.com/file/d/15AZyFupFlwUQwpVDJrnIOMKgLGSDpi03/view?usp=sharing"
             className={styles.contactBtn}
             target="_blank"
           >
