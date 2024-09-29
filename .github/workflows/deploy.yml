@@ -50,8 +50,8 @@ jobs:
 
       - name: Deploy to Netlify
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.nfp_E6YwaAM2uN7RiPYwafXuj6ZpGtg46yLT87ac }}
+          NETLIFY_SITE_ID: ${{ secrets.c748c8fe-6609-439e-846b-ed45454e6889 }}
         run: npx netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod --dir=build
 
       - name: Create a GitHub Release
