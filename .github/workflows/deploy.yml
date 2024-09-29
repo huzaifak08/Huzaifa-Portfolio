@@ -3,7 +3,8 @@ name: CI/CD for Netlify Deployment
 on:
   push:
     branches:
-      - master # Automatically triggers on push to the main branch
+      - master
+  # workflow_dispatch:
 
 jobs:
   build:
@@ -27,11 +28,11 @@ jobs:
           export NODE_OPTIONS=--experimental-vm-modules
           npm run build
 
+      - name: Link to Netlify Site
+        run: netlify link --id ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
       - name: Deploy to Netlify
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: npx netlify deploy --auth $NETLIFY_AUTH_TOKEN --prod --dir=dist --site=$NETLIFY_SITE_ID
+        run: netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --prod --dir=dist
 
       - name: Create a GitHub Release
         id: create_release
