@@ -17,18 +17,26 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "12.x" # Use the Node.js version required by your project
+          node-version: "22.2.0" # Match your Node.js version
+          cache: "npm"
+
+      - name: Verify Node and npm versions
+        run: |
+          node --version
+          npm --version
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Project
-        run: npm run build
+        run: |
+          export NODE_OPTIONS=--experimental-vm-modules
+          npm run build
 
       - name: Deploy to Netlify
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.nfp_E6YwaAM2uN7RiPYwafXuj6ZpGtg46yLT87ac }}
-          NETLIFY_SITE_ID: ${{ secrets.c748c8fe-6609-439e-846b-ed45454e6889 }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: npx netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod --dir=build
 
       - name: Create a GitHub Release
