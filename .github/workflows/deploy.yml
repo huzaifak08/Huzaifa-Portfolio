@@ -33,6 +33,15 @@ jobs:
           export NODE_OPTIONS=--experimental-vm-modules
           npm run build
 
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
+
+      - name: Print Environment Variables
+        run: printenv
+
+      - name: Print npm Configuration
+        run: npm config list
+
       - name: Deploy to Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
