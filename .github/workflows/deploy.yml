@@ -42,6 +42,12 @@ jobs:
       - name: Print npm Configuration
         run: npm config list
 
+      - name: List Project Directory
+        run: ls -R
+
+      - name: List Build Directory
+        run: ls -R dist
+
       - name: Deploy to Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
