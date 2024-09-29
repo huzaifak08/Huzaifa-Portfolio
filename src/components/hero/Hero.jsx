@@ -14,7 +14,7 @@ function Hero() {
           learn new things in my field and currently learning SwiftUI.
         </p>
         <div className={styles.buttons}>
-          <a href="mailto:hk7928042@gmail.com" className={styles.contactBtn}>
+          <a href="mailto:huzaifa.uno@gmail.com" className={styles.contactBtn}>
             Contact Me
           </a>
           <a
