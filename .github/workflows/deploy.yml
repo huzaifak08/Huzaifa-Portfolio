@@ -46,13 +46,16 @@ jobs:
           draft: false
           prerelease: false
 
+      - name: Zip Build Directory
+        run: zip -r production_build.zip dist
+
       - name: Upload Production Build to Release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist
+          asset_path: ./production_build.zip
           asset_name: production_build.zip
           asset_content_type: application/zip
 
