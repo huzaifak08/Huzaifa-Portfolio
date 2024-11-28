@@ -8,7 +8,7 @@ function Hero() {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Huzaifa</h1>
         <p className={styles.description}>
-          I'm a full stack Flutter developer with almost 1.5 years of
+          I'm a full stack Flutter developer with years of
           Professional experience. I'm a BS Computer Science Graduate from
           Comsats University. I've strong problem solving skills and love to
           learn new things in my field and currently learning SwiftUI.
@@ -18,7 +18,7 @@ function Hero() {
             Contact Me
           </a>
           <a
-            href="https://drive.google.com/file/d/15AZyFupFlwUQwpVDJrnIOMKgLGSDpi03/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KpSRWt7kH1MCu-wZz_lYdmaO1qDQ2pt7/view?usp=sharing"
             className={styles.contactBtn}
             target="_blank"
           >
