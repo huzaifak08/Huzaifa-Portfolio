@@ -24,12 +24,24 @@ function ProjectCard({
         })}
       </ul>
       <div className={styles.links}>
-        <a href={demo} className={styles.link} target="_blank">
-          Demo
-        </a>
-        <a href={source} className={styles.link} target="_blank">
-          Source
-        </a>
+        {demo && (
+          <a href={demo} className={styles.link} target="_blank">
+            {demo.includes("google")
+              ? "Google"
+              : demo.includes("apple")
+              ? "Apple"
+              : "Demo"}
+          </a>
+        )}
+        {source && (
+          <a href={source} className={styles.link} target="_blank">
+            {source.includes("google")
+              ? "Google"
+              : source.includes("apple")
+              ? "Apple"
+              : "Source"}
+          </a>
+        )}
       </div>
     </div>
   );
