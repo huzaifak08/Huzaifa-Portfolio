@@ -36,7 +36,7 @@ function About() {
             />
             <div className={styles.aboutItemText}>
               <h3>Database</h3>
-              <p>Database used are Firestore,Mongodb and MySql</p>
+              <p>Experience with Firestore, MongoDB and MySQL databases</p>
             </div>
           </li>
         </ul>
