@@ -2,8 +2,8 @@
   {
     "title": "QLU Roundtable",
     "imageSrc": "projects/roundtable.png",
-    "description": "E-Commerce app which uses fakestoreapi.com",
-    "skills": ["Flutter", "PostgreSql","Riverpod","TypeScript"],
+    "description": "Social App for People to connect.",
+    "skills": ["Flutter", "PostgreSql", "Riverpod", "TypeScript"],
     "demo": "https://apps.apple.com/ph/app/qlu-roundtable/id6472044990",
     "source": "https://play.google.com/store/apps/details?id=com.qlu.ios_roundtable_frontend&pli=1"
   },
@@ -11,7 +11,7 @@
     "title": "Fake Store",
     "imageSrc": "projects/FakeStore.png",
     "description": "E-Commerce app which uses fakestoreapi.com",
-    "skills": ["Flutter", "Rest API","GitHub Actions","MobX"],
+    "skills": ["Flutter", "Rest API", "GitHub Actions", "MobX"],
     "demo": "https://drive.google.com/file/d/15nP8UjN7pme5xshklyYpYY2-7UeN_m9m/view?usp=sharing",
     "source": "https://github.com/huzaifak08/Fake-Store"
   },
@@ -19,7 +19,7 @@
     "title": "Himalaya Portal System",
     "imageSrc": "projects/Project Himalaya.png",
     "description": "This was our Final Year Project and was a Student Management System.",
-    "skills": ["Flutter", "React", "Node","MongoDB","AWS","BLoC"],
+    "skills": ["Flutter", "React", "Node", "MongoDB", "AWS", "BLoC"],
     "demo": "https://youtu.be/wrzAkDEYvDc",
     "source": "https://www.github.com"
   },
@@ -43,7 +43,7 @@
     "title": "Lawyers Lot",
     "imageSrc": "projects/LawyersLot.png",
     "description": "App which uses phone auth and connects lawyers and clients through scheduled meeting.",
-    "skills": ["Flutter", "Firebase","Stripe"],
+    "skills": ["Flutter", "Firebase", "Stripe"],
     "demo": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1748411182096703488",
     "source": "https://github.com/huzaifak08/"
   },
@@ -51,7 +51,7 @@
     "title": "One Planet Fuel Station",
     "imageSrc": "projects/OnePlanet.png",
     "description": "App which can be used to order fuel from any fuel station near you.",
-    "skills": ["Flutter", "Firebase","Google Maps","Stripe"],
+    "skills": ["Flutter", "Firebase", "Google Maps", "Stripe"],
     "demo": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1688467524285415424",
     "source": "https://github.com/huzaifak08/"
   }
