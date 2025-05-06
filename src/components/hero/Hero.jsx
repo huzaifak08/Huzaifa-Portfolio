@@ -3,6 +3,7 @@ import { getImageUrl } from "../../utils";
 import styles from "./Hero.module.css";
 
 function Hero() {
+  const width = Math.max(document.clientWidth || 0, window.innerWidth || 0);
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -15,14 +16,16 @@ function Hero() {
         </p>
         <div className={styles.buttons}>
           <a href="mailto:huzaifa.uno@gmail.com" className={styles.contactBtn}>
-            Contact Me
+            <span className={styles.icon}>✉️</span>
+            <span className={styles.text}>Contact Me</span>
           </a>
           <a
             href="https://drive.google.com/file/d/1-xxQR6xY_0tb76OO3iwNoCBvKgviS6Ur/view?usp=sharing"
             className={styles.contactBtn}
             target="_blank"
           >
-            Download CV
+            <span className={styles.icon}>📥</span>
+            <span className={styles.text}>Download CV</span>
           </a>
         </div>
       </div>

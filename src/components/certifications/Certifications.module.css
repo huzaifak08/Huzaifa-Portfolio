@@ -2,9 +2,7 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 76px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 76px 10% 0 10%;
 }
 
 .content {
@@ -33,48 +31,40 @@
   border-radius: 10px;
   background: linear-gradient(180deg, #132a53 100%, #576cbc 0%);
   box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
-  max-width: auto;
+  padding: 9px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.image {
-  margin-bottom: 26px;
-}
-
-.details {
-  margin-right: 18px;
-}
-
-.courseTile {
-  font-size: 25px;
-  font-weight: 700;
-  justify-content: center;
-}
-
-.organization {
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.logo {
-  border-radius: 7px;
-  margin-right: 9px;
-}
-
-.openBtn {
-  color: var(--color-text);
-  font-size: 20px;
-  font-weight: 500;
+.certificate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 20px 0 rgba(4, 21, 45, 0.8),
+    0 0 15px 5px rgba(87, 108, 188, 0.7);
 }
 
 @media screen and (max-width: 830px) {
+  .container {
+    margin-bottom: 0;
+  }
+
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .certificate {
+    width: calc(50% - 15px);
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .content {
     flex-direction: column;
     align-items: center;
-    gap: 34px;
+    gap: 0;
   }
 
   .certificate {
@@ -82,16 +72,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 0;
-  }
-
-  .details {
-    width: 100%;
-    flex-direction: row;
-  }
-
-  .openBtn {
-    color: var(--color-text);
-    font-size: 20px;
-    font-weight: 500;
+    margin-top: 10%;
   }
 }

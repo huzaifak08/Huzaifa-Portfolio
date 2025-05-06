@@ -10,13 +10,18 @@ function Certifications() {
       <div className={styles.content}>
         {certificates.map((certificate, id) => {
           return (
-            <div key={id} className={styles.certificate}>
+            <div
+              key={id}
+              className={styles.certificate}
+              onClick={() => window.open(certificate.source, "_blank")}
+              style={{ cursor: "pointer" }}
+            >
               <img
                 src={getImageUrl(certificate.imageSrc)}
                 alt={`Certificate of ${certificate.title}`}
                 className={styles.image}
               />
-              <div className={styles.details}>
+              {/* <div className={styles.details}>
                 <h3 className={styles.courseTile}>{certificate.title}</h3>
                 <div className={styles.organization}>
                   <img
@@ -29,7 +34,7 @@ function Certifications() {
                 <a href={certificate.source} className={styles.openBtn} target="_blank">
                   Click to Open
                 </a>
-              </div>
+              </div> */}
             </div>
           );
         })}

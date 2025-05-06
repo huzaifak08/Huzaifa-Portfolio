@@ -56,6 +56,10 @@
   margin-right: 20px;
 }
 
+.text {
+  padding-left: 10px;
+}
+
 .heroImg {
   width: 40%;
   z-index: 1;
@@ -117,5 +121,26 @@
   .buttons {
     flex-direction: column;
     gap: 13px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .content {
+    align-items: center;
+  }
+  .contactBtn {
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+  }
+  .text {
+    display: none;
   }
 }

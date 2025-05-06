@@ -50,6 +50,7 @@
   .container {
     flex-direction: column;
     gap: 23px;
+    margin-top: 10%;
   }
 
   .text {
