@@ -41,6 +41,10 @@
     0 0 15px 5px rgba(87, 108, 188, 0.7);
 }
 
+.seeMore {
+  display: none;
+}
+
 @media screen and (max-width: 830px) {
   .container {
     margin-bottom: 0;
@@ -58,6 +62,10 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .seeMore {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -73,5 +81,19 @@
     justify-content: center;
     gap: 0;
     margin-top: 10%;
+  }
+
+  .seeMore {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: underline;
+  }
+
+  .seeMore:active {
+    color: var(--color-text);
+    text-decoration: underline;
   }
 }

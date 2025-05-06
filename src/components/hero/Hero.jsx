@@ -3,7 +3,6 @@ import { getImageUrl } from "../../utils";
 import styles from "./Hero.module.css";
 
 function Hero() {
-  const width = Math.max(document.clientWidth || 0, window.innerWidth || 0);
   return (
     <section className={styles.container}>
       <div className={styles.content}>

@@ -124,4 +124,22 @@
   .container {
     margin-top: 0px;
   }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skill p {
+    display: none;
+  }
+
+  .skillImageContainer {
+    height: 80px;
+    width: 80px;
+  }
+
+  .skillImageContainer img {
+    width: 40px;
+  }
 }
