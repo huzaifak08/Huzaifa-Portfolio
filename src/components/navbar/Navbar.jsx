@@ -40,6 +40,9 @@ function Navbar() {
           <li>
             <a href="#contact">Contact</a>
           </li>
+          <li>
+            <a href="https://huzaifa.uno/blogs/">Blog</a>
+          </li>
         </ul>
       </div>
     </nav>
