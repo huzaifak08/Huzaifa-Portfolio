@@ -8,6 +8,14 @@
     "source": "https://play.google.com/store/apps/details?id=com.qlu.ios_roundtable_frontend&pli=1"
   },
   {
+    "title": "AI Park",
+    "imageSrc": "projects/ai-park.png",
+    "description": "Extact, Enhance and Summarize using AI",
+    "skills": ["Flutter", "Gemini", "Ml Kit", "OCR"],
+    "demo": "https://aipark.huzaifa.uno/",
+    "source": "https://play.google.com/store/apps/details?id=com.huzaifa.ai_park"
+  },
+  {
     "title": "Fake Store",
     "imageSrc": "projects/FakeStore.png",
     "description": "E-Commerce app which uses fakestoreapi.com",
@@ -27,7 +35,7 @@
     "title": "Music Player",
     "imageSrc": "projects/Project Music.png",
     "description": "Music Player which will play the music and uses iTunes API.",
-    "skills": ["Flutter", "Http"],
+    "skills": ["Flutter", "Rest API"],
     "demo": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1692938820901584896",
     "source": "https://github.com/huzaifak08/Music-Player-Flutter"
   },
@@ -38,14 +46,6 @@
     "skills": ["Flutter", "Firebase"],
     "demo": "https://play.google.com/store/apps/details?id=com.softmostro.password_saver",
     "source": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1688474980673863680"
-  },
-  {
-    "title": "Lawyers Lot",
-    "imageSrc": "projects/LawyersLot.png",
-    "description": "App which uses phone auth and connects lawyers and clients through scheduled meeting.",
-    "skills": ["Flutter", "Firebase", "Stripe"],
-    "demo": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1748411182096703488",
-    "source": "https://github.com/huzaifak08/"
   },
   {
     "title": "One Planet Fuel Station",
