@@ -1,6 +1,6 @@
 [
   {
-    "title": "QLU Roundtable",
+    "title": "QLU Social",
     "imageSrc": "projects/roundtable.png",
     "description": "Social App for People to connect.",
     "skills": ["Flutter", "PostgreSql", "Riverpod", "TypeScript"],
@@ -9,7 +9,7 @@
   },
   {
     "title": "AI Park",
-    "imageSrc": "projects/ai-park.png",
+    "imageSrc": "projects/aipark.png",
     "description": "Extact, Enhance and Summarize using AI",
     "skills": ["Flutter", "Gemini", "Ml Kit", "OCR"],
     "demo": "https://aipark.huzaifa.uno/",
