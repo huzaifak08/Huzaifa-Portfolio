@@ -2,25 +2,25 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 76px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 60px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 1.25px;
   text-transform: uppercase;
 }
 
 .projects {
-  margin-top: 37px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
   width: 100%;
 }
