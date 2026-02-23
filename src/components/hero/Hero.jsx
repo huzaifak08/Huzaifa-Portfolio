@@ -1,4 +1,3 @@
-import React from "react";
 import { getImageUrl } from "../../utils";
 import styles from "./Hero.module.css";
 
@@ -19,7 +18,7 @@ function Hero() {
             <span className={styles.text}>Contact Me</span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1-xxQR6xY_0tb76OO3iwNoCBvKgviS6Ur/view?usp=sharing"
+            href="https://drive.google.com/file/d/1k6mX5oV-yxYH7f_GAWg_C7KJLk8vOXyh/view?usp=sharing"
             className={styles.contactBtn}
             target="_blank"
           >
@@ -29,7 +28,7 @@ function Hero() {
         </div>
       </div>
       <img
-        src={getImageUrl("hero/ps-compressed.png")}
+        src={getImageUrl("hero/new-dp.png")}
         alt="Hero image of me"
         className={styles.heroImg}
       />
