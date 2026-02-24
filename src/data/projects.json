@@ -1,7 +1,7 @@
 [
   {
     "title": "QLU World",
-    "imageSrc": "projects/roundtable.png",
+    "imageSrc": "projects/world.png",
     "description": "Virtual office for businesses",
     "skills": ["Flutter", "PostgreSql", "Riverpod", "TypeScript"],
     "demo": "https://apps.apple.com/pk/app/qlu-world/id6753807356",
@@ -12,8 +12,7 @@
     "imageSrc": "projects/roundtable.png",
     "description": "Social App for People to connect.",
     "skills": ["Flutter", "PostgreSql", "Riverpod", "TypeScript"],
-    "demo": "https://apps.apple.com/ph/app/qlu-roundtable/id6472044990",
-    "source": "https://play.google.com/store/apps/details?id=com.qlu.ios_roundtable_frontend&pli=1"
+    "demo": "https://apps.apple.com/ph/app/qlu-roundtable/id6472044990"
   },
   {
     "title": "Quibl",
@@ -44,7 +43,6 @@
     "imageSrc": "projects/Project Music.png",
     "description": "Music Player which will play the music also in background and uses iTunes API for music to fetch from.",
     "skills": ["Flutter", "Rest API"],
-    "demo": "https://www.upwork.com/freelancers/~01d183698e9df91d31?p=1692938820901584896",
     "source": "https://github.com/huzaifak08/Music-Player-Flutter"
   }
 ]
