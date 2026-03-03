@@ -1,4 +1,4 @@
-name: Deploy portfolio on push
+name: Deploy website on push
 on:
   push:
     branches:
