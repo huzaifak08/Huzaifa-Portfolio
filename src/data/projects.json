@@ -20,7 +20,7 @@
     "description": "Learn Daily is a streamlined, distraction-free app designed for lifelong learners.",
     "skills": ["Flutter", "Sqlite", "Riverpod"],
     "demo": "https://play.google.com/store/apps/details?id=com.farooq.quibl",
-    "source": "https://github.com/huzaifak08?tab=repositories"
+    "source": "https://github.com/huzaifak08/Quibl"
   },
   {
     "title": "Aetate",
@@ -28,15 +28,15 @@
     "description": "Discover the simplest way to track your life’s milestones with Aetate.",
     "skills": ["Flutter", "Provider", "GitHub Actions"],
     "demo": "https://play.google.com/store/apps/details?id=com.abdullah.aetate",
-    "source": "https://github.com/huzaifak08?tab=repositories"
+    "source": "https://github.com/huzaifak08/Aetate"
   },
   {
-    "title": "Himalaya Portal System",
+    "title": "SwiftSale",
     "imageSrc": "projects/Project Himalaya.png",
-    "description": "This was our Final Year Project and was a Student Management System.",
-    "skills": ["Flutter", "React", "Node", "MongoDB", "AWS", "BLoC"],
-    "demo": "https://youtu.be/wrzAkDEYvDc",
-    "source": "https://www.github.com"
+    "description": "Calculate the total savings in Dollars from discounted percentage",
+    "skills": ["Flutter"],
+    "demo": "https://play.google.com/store/apps/details?id=com.azwa.swiftsale",
+    "source": "https://github.com/huzaifak08/SwiftSale"
   },
   {
     "title": "Music Player",
