@@ -15,14 +15,6 @@
     "demo": "https://apps.apple.com/ph/app/qlu-roundtable/id6472044990"
   },
   {
-    "title": "Quibl",
-    "imageSrc": "projects/quibl.png",
-    "description": "Learn Daily is a streamlined, distraction-free app designed for lifelong learners.",
-    "skills": ["Flutter", "Sqlite", "Riverpod"],
-    "demo": "https://play.google.com/store/apps/details?id=com.farooq.quibl",
-    "source": "https://github.com/huzaifak08/Quibl"
-  },
-  {
     "title": "Aetate",
     "imageSrc": "projects/age-calc.png",
     "description": "Discover the simplest way to track your life’s milestones with Aetate.",
@@ -31,8 +23,17 @@
     "source": "https://github.com/huzaifak08/Aetate"
   },
   {
+    "title": "Quibl",
+    "imageSrc": "projects/quibl.png",
+    "description": "Learn Daily is a streamlined, distraction-free app designed for lifelong learners.",
+    "skills": ["Flutter", "Sqlite", "Riverpod"],
+    "demo": "https://play.google.com/store/apps/details?id=com.farooq.quibl",
+    "source": "https://github.com/huzaifak08/Quibl"
+  },
+
+  {
     "title": "SwiftSale",
-    "imageSrc": "projects/Project Himalaya.png",
+    "imageSrc": "projects/swiftsale.png",
     "description": "Calculate the total savings in Dollars from discounted percentage",
     "skills": ["Flutter"],
     "demo": "https://play.google.com/store/apps/details?id=com.azwa.swiftsale",
