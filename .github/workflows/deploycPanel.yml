@@ -1,20 +1,30 @@
-name: Deploy website on push
+name: Deploy portfolio on push
 on:
   push:
-    branches: master
+    branches:
+      - master
+
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v2.1.0
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0 # FIXES EXIT CODE 8: Fetches all history for git-ftp
+
+      - name: 🔨 Build Project
+        run: |
+          npm install
+          npm run build
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        # Added the 'v' and ensured correct casing
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          ftp-server: ${{ secrets.FTP_SERVER }}
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./build/
+          server-dir: ./
