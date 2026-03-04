@@ -12,7 +12,9 @@ function Contact() {
       <ul className={styles.links}>
         <li className={styles.link}>
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:huzaifa.uno@gmail.com">huzaifa.uno@gmail.com</a>
+          <a href="mailto:huzaifa.uno@gmail.com" target="_blank">
+            huzaifa.uno@gmail.com
+          </a>
         </li>
 
         <li className={styles.link}>
@@ -20,14 +22,21 @@ function Contact() {
             src={getImageUrl("contact/linkedinIcon.png")}
             alt="Linkedin icon"
           />
-          <a href="https://www.linkedin.com/in/huzaifak08/">
+          <a href="https://www.linkedin.com/in/huzaifak08/" target="_blank">
             Huzaifa Khan (huzaifak08)
           </a>
         </li>
 
         <li className={styles.link}>
           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://github.com/huzaifak08">huzaifak08</a>
+          <a href="https://github.com/huzaifak08" target="_blank">
+            huzaifak08
+          </a>
+        </li>
+
+        <li className={styles.link}>
+          <img src={getImageUrl("contact/whatsapp.png")} alt="Github icon" />
+          <a>+92 318 0794547</a>
         </li>
       </ul>
     </footer>
