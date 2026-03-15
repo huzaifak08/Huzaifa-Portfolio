@@ -2,7 +2,7 @@
   {
     "title": "QLU World",
     "imageSrc": "projects/world.png",
-    "description": "Virtual office for businesses",
+    "description": "Virtual office for businesses.",
     "skills": ["Flutter", "PostgreSql", "Riverpod", "TypeScript"],
     "demo": "https://apps.apple.com/pk/app/qlu-world/id6753807356",
     "source": "https://www.qlu.world/"
@@ -34,16 +34,17 @@
   {
     "title": "SwiftSale",
     "imageSrc": "projects/swiftsale.png",
-    "description": "Calculate the total savings in Dollars from discounted percentage",
+    "description": "Calculate the total savings in Dollars from discounted percentage.",
     "skills": ["Flutter"],
     "demo": "https://play.google.com/store/apps/details?id=com.azwa.swiftsale",
     "source": "https://github.com/huzaifak08/SwiftSale"
   },
   {
-    "title": "Music Player",
-    "imageSrc": "projects/Project Music.png",
-    "description": "Music Player which will play the music also in background and uses iTunes API for music to fetch from.",
-    "skills": ["Flutter", "Rest API"],
-    "source": "https://github.com/huzaifak08/Music-Player-Flutter"
+    "title": "Gallo",
+    "imageSrc": "projects/gallo.png",
+    "description": "Estimate the total expense of Fuel on any road trip of any vehicle.",
+    "skills": ["Flutter", "CI/CD", "GitHub Actions"],
+    "demo": "https://play.google.com/store/apps/details?id=com.hammad.gallo",
+    "source": "https://github.com/huzaifak08/Gallo"
   }
 ]

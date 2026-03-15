@@ -1,4 +1,4 @@
-name: Deploy website on push
+name: Deploy to huzaifa.uno
 on:
   push:
     branches:
