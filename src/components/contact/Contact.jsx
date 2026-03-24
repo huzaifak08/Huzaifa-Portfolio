@@ -38,6 +38,11 @@ function Contact() {
           <img src={getImageUrl("contact/whatsapp.png")} alt="Github icon" />
           <a>+92 318 0794547</a>
         </li>
+
+        <li className={styles.link}>
+          <img src={getImageUrl("contact/loc.png")} alt="Github icon" />
+          <a>Islamabad, Pakistan</a>
+        </li>
       </ul>
     </footer>
   );
