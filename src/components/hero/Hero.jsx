@@ -28,7 +28,7 @@ function Hero() {
         </div>
       </div>
       <img
-        src={getImageUrl("hero/new-dp.png")}
+        src={getImageUrl("hero/new-dp.webp")}
         alt="Hero image of me"
         className={styles.heroImg}
       />

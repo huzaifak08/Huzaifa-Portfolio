@@ -1,7 +1,7 @@
 [
   {
     "title": "QLU World",
-    "imageSrc": "projects/world.png",
+    "imageSrc": "projects/world.webp",
     "description": "Virtual office for businesses.",
     "skills": ["Flutter", "PostgreSql", "Riverpod", "TypeScript"],
     "demo": "https://apps.apple.com/pk/app/qlu-world/id6753807356",
@@ -9,14 +9,14 @@
   },
   {
     "title": "QLU Social",
-    "imageSrc": "projects/roundtable.png",
+    "imageSrc": "projects/roundtable.webp",
     "description": "Social App for People to connect.",
     "skills": ["Flutter", "PostgreSql", "Riverpod", "TypeScript"],
     "demo": "https://apps.apple.com/ph/app/qlu-roundtable/id6472044990"
   },
   {
     "title": "Aetate",
-    "imageSrc": "projects/age-calc.png",
+    "imageSrc": "projects/age-calc.webp",
     "description": "Discover the simplest way to track your life’s milestones with Aetate.",
     "skills": ["Flutter", "Provider", "GitHub Actions"],
     "demo": "https://play.google.com/store/apps/details?id=com.abdullah.aetate",
@@ -24,7 +24,7 @@
   },
   {
     "title": "Quibl",
-    "imageSrc": "projects/quibl.png",
+    "imageSrc": "projects/quibl.webp",
     "description": "Learn Daily is a streamlined, distraction-free app designed for lifelong learners.",
     "skills": ["Flutter", "Sqlite", "Riverpod"],
     "demo": "https://play.google.com/store/apps/details?id=com.farooq.quibl",
@@ -33,7 +33,7 @@
 
   {
     "title": "SwiftSale",
-    "imageSrc": "projects/swiftsale.png",
+    "imageSrc": "projects/swiftsale.webp",
     "description": "Calculate the total savings in Dollars from discounted percentage.",
     "skills": ["Flutter"],
     "demo": "https://play.google.com/store/apps/details?id=com.azwa.swiftsale",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Gallo",
-    "imageSrc": "projects/gallo.png",
+    "imageSrc": "projects/gallo.webp",
     "description": "Estimate the total expense of Fuel on any road trip of any vehicle.",
     "skills": ["Flutter", "CI/CD", "GitHub Actions"],
     "demo": "https://play.google.com/store/apps/details?id=com.hammad.gallo",
