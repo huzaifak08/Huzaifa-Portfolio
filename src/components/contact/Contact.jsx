@@ -36,7 +36,7 @@ function Contact() {
 
         <li className={styles.link}>
           <img src={getImageUrl("contact/whatsapp.png")} alt="Github icon" />
-          <a>+92 318 0794547</a>
+          <a>+92 371 5330671</a>
         </li>
 
         <li className={styles.link}>
