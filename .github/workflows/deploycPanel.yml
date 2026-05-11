@@ -34,3 +34,4 @@ jobs:
           # CHANGE THIS BELOW: Use ./dist/ if you are using Vite
           local-dir: ./dist/
           server-dir: ./
+          dangerous-clean-slate: true
