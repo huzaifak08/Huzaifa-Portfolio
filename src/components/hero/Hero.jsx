@@ -18,7 +18,7 @@ function Hero() {
             <span className={styles.text}>Contact Me</span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1k6mX5oV-yxYH7f_GAWg_C7KJLk8vOXyh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ACV3UVkLReYevtVqXUSELoTNzm9IyqAQ/view?usp=sharing"
             className={styles.contactBtn}
             target="_blank"
           >

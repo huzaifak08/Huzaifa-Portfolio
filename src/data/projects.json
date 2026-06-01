@@ -5,7 +5,7 @@
     "description": "Virtual office for businesses.",
     "skills": ["Flutter", "PostgreSql", "Riverpod", "TypeScript"],
     "demo": "https://apps.apple.com/pk/app/qlu-world/id6753807356",
-    "source": "https://www.qlu.world/"
+    "source": "https://play.google.com/store/apps/details?id=ai.qlu.qluworld.android&hl=en"
   },
   {
     "title": "QLU Social",
@@ -15,12 +15,12 @@
     "demo": "https://apps.apple.com/ph/app/qlu-roundtable/id6472044990"
   },
   {
-    "title": "Aetate",
+    "title": "Sprint 14",
     "imageSrc": "projects/age-calc.webp",
-    "description": "Discover the simplest way to track your life’s milestones with Aetate.",
-    "skills": ["Flutter", "Provider", "GitHub Actions"],
-    "demo": "https://play.google.com/store/apps/details?id=com.abdullah.aetate",
-    "source": "https://github.com/huzaifak08/Aetate"
+    "description": "Track all Personal, Business or Event Base Ledgers(expenses) without any hastle.",
+    "skills": ["Flutter", "Firebase", "Riverpod", "CI/CD", "Method Channel"],
+    "demo": "https://play.google.com/store/apps/details?id=com.zaifii.sprint_14&hl=en",
+    "source": "https://github.com/huzaifak08/Sprint-14/actions"
   },
   {
     "title": "Quibl",
