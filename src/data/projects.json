@@ -16,11 +16,41 @@
   },
   {
     "title": "Sprint 14",
-    "imageSrc": "projects/age-calc.webp",
+    "imageSrc": "projects/sprint14.webp",
     "description": "Track all Personal, Business or Event Base Ledgers(expenses) without any hastle.",
     "skills": ["Flutter", "Firebase", "Riverpod", "CI/CD", "Method Channel"],
     "demo": "https://play.google.com/store/apps/details?id=com.zaifii.sprint_14&hl=en",
     "source": "https://github.com/huzaifak08/Sprint-14/actions"
+  },
+  {
+    "title": "Sonixa",
+    "imageSrc": "projects/sonixa.webp",
+    "description": "Listen to offline music, having a beautiful UI with awesome UX",
+    "skills": [
+      "Flutter",
+      "Riverpod",
+      "Method Channel",
+      "CI/CD",
+      "GitHub Actions"
+    ],
+    "demo": "https://play.google.com/store/apps/details?id=com.farrukh.coctio",
+    "source": "https://github.com/huzaifak08/Sonixa"
+  },
+  {
+    "title": "Shiftipoz",
+    "imageSrc": "projects/shiftipoz.webp",
+    "description": "A Platform to Buy, Sell, Rent or Giveaway your books (In initial phase only).",
+    "skills": [
+      "Flutter",
+      "Firebase",
+      "Riverpod",
+      "Sqlite",
+      "Fleet / Telematics",
+      "Google Maps",
+      "CI/CD"
+    ],
+    "demo": "https://play.google.com/store/apps/details?id=com.firoz.shiftipoz",
+    "source": "https://github.com/huzaifak08/Shiftipoz"
   },
   {
     "title": "Quibl",
@@ -29,22 +59,5 @@
     "skills": ["Flutter", "Sqlite", "Riverpod"],
     "demo": "https://play.google.com/store/apps/details?id=com.farooq.quibl",
     "source": "https://github.com/huzaifak08/Quibl"
-  },
-
-  {
-    "title": "SwiftSale",
-    "imageSrc": "projects/swiftsale.webp",
-    "description": "Calculate the total savings in Dollars from discounted percentage.",
-    "skills": ["Flutter"],
-    "demo": "https://play.google.com/store/apps/details?id=com.azwa.swiftsale",
-    "source": "https://github.com/huzaifak08/SwiftSale"
-  },
-  {
-    "title": "Gallo",
-    "imageSrc": "projects/gallo.webp",
-    "description": "Estimate the total expense of Fuel on any road trip of any vehicle.",
-    "skills": ["Flutter", "CI/CD", "GitHub Actions"],
-    "demo": "https://play.google.com/store/apps/details?id=com.hammad.gallo",
-    "source": "https://github.com/huzaifak08/Gallo"
   }
 ]
