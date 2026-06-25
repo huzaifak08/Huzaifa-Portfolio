@@ -13,12 +13,15 @@ function Hero() {
           Currently seeking new opportunities.
         </p>
         <div className={styles.buttons}>
-          <a href="mailto:huzaifa.uno@gmail.com" className={styles.contactBtn}>
+          <a
+            href="mailto:contact@huzaifakhan.com"
+            className={styles.contactBtn}
+          >
             <span className={styles.icon}>✉️</span>
             <span className={styles.text}>Contact Me</span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1ACV3UVkLReYevtVqXUSELoTNzm9IyqAQ/view?usp=sharing"
+            href="https://drive.google.com/file/d/14iUGoZr87RC46KlRiQq39h5rnuJZ3dPf/view?usp=sharing"
             className={styles.contactBtn}
             target="_blank"
           >

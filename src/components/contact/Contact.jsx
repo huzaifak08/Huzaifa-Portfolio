@@ -12,8 +12,8 @@ function Contact() {
       <ul className={styles.links}>
         <li className={styles.link}>
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:huzaifa.uno@gmail.com" target="_blank">
-            huzaifa.uno@gmail.com
+          <a href="mailto:contact@huzaifakhan.com" target="_blank">
+            contact@huzaifakhan.com
           </a>
         </li>
 
