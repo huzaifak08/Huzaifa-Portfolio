@@ -1,81 +1,179 @@
-@import "../../vars.css";
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 14px var(--page-gutter) 0;
+  pointer-events: none;
+}
 
 .navbar {
-  position: relative;
+  pointer-events: auto;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.03);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  transition: background-color 0.4s ease, border-color 0.4s ease,
+    box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+.scrolled,
+.open {
+  background: rgba(22, 22, 28, 0.55);
+  border-color: var(--glass-border);
+  box-shadow: var(--glass-highlight), 0 12px 40px -12px rgba(0, 0, 0, 0.6);
+}
+
+.bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 50px;
-  z-index: 2;
-  margin: 0 8%;
+  gap: 16px;
+  height: 58px;
+  padding: 0 10px 0 20px;
 }
 
 .title {
-  font-size: 24px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   text-decoration: none;
   color: var(--color-text);
+  margin-right: auto;
 }
 
-.menu {
+.logoDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #0a84ff, #bf5af2 60%, #ff375f);
+  box-shadow: 0 0 18px rgba(10, 132, 255, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.desktopItems {
   display: flex;
+  gap: 4px;
+  list-style: none;
+}
+
+.desktopItems a {
+  display: block;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-text-muted);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.desktopItems a:hover {
+  color: var(--color-text);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.cta {
+  min-height: 38px;
+  padding: 0 18px;
+  font-size: 14px;
 }
 
 .menuBtn {
   display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+  cursor: pointer;
 }
 
-.menuItems {
-  display: flex;
-  gap: 35px;
+.menuBtn span {
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--color-text);
+  transition: transform 0.4s var(--ease-out), top 0.4s var(--ease-out);
+}
+
+.menuBtn span:nth-child(1) {
+  top: 18px;
+}
+.menuBtn span:nth-child(2) {
+  top: 25px;
+}
+
+.open .menuBtn span:nth-child(1) {
+  top: 21px;
+  transform: rotate(45deg);
+}
+.open .menuBtn span:nth-child(2) {
+  top: 21px;
+  transform: rotate(-45deg);
+}
+
+.mobileItems {
+  display: none;
   list-style: none;
 }
 
-.menuItems a {
-  font-size: 20px;
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-@media screen and (max-width: 830px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 8px;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 9px;
-    z-index: 3;
+@media (max-width: 900px) {
+  .desktopItems {
+    display: none;
   }
 
   .menuBtn {
     display: block;
-    cursor: pointer;
   }
 
-  .menuItems {
+  .cta {
     display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: rgb(25, 55, 109);
-    background: linear-gradient(
-      0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
-    );
-    padding: 20px 25px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .menuOpen {
-    display: flex;
-    z-index: 1;
+  .mobileItems {
+    display: grid;
+    grid-template-rows: repeat(5, 0fr);
+    padding: 0 12px;
+    transition: grid-template-rows 0.5s var(--ease-out),
+      padding 0.5s var(--ease-out);
+  }
+
+  .mobileItems li {
+    overflow: hidden;
+  }
+
+  .mobileItems a {
+    display: block;
+    padding: 12px 10px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: var(--color-text);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.3s ease, transform 0.4s var(--ease-out);
+  }
+
+  .open .mobileItems {
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0 12px 12px;
+  }
+
+  .open .mobileItems a {
+    opacity: 1;
+    transform: none;
   }
 }

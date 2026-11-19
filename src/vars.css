@@ -1,11 +1,45 @@
-:root{
-    /* Colors */
-    --color-text:#fff;
-    --color-primary:#576cbc;
-    --color-secondary:#19376b;
-    --color-dark:#0b2447;
-    --color-bg:#04152d;
+:root {
+  /* Surface & text */
+  --color-bg: #05060a;
+  --color-text: #f5f5f7;
+  --color-text-muted: rgba(235, 235, 245, 0.64);
+  --color-text-faint: rgba(235, 235, 245, 0.42);
 
-    /* Fonts */
-    --font-roboto:"Roboto";
+  /* Accents (Apple system-like hues) */
+  --color-primary: #0a84ff;
+  --color-primary-hover: #409cff;
+  --color-accent-purple: #bf5af2;
+  --color-accent-pink: #ff375f;
+  --color-accent-teal: #64d2ff;
+  --color-success: #30d158;
+
+  /* Glass */
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-bg-strong: rgba(255, 255, 255, 0.1);
+  --glass-bg-hover: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-border-strong: rgba(255, 255, 255, 0.22);
+  --glass-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.14);
+  --glass-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.55);
+  --glass-blur: blur(24px) saturate(180%);
+
+  /* Radii */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 36px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --page-max: 1180px;
+  --page-gutter: clamp(16px, 5vw, 48px);
+  --section-gap: clamp(72px, 12vw, 140px);
+
+  /* Type */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Outfit", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-roboto: var(--font-sans);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }

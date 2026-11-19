@@ -1,58 +1,78 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Certifications.module.css";
 import certificates from "../../data/certifications.json";
 import { getImageUrl } from "../../utils";
 
+const MOBILE_QUERY = "(max-width: 480px)";
+const MOBILE_LIMIT = 4;
+
 function Certifications() {
   const [showAll, setShowAll] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 450);
+  const [isMobile, setIsMobile] = useState(
+    () => window.matchMedia(MOBILE_QUERY).matches
+  );
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 450);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const mq = window.matchMedia(MOBILE_QUERY);
+    const onChange = (e) => setIsMobile(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
   }, []);
 
-  const displayedCertificates = isMobile
-    ? showAll
-      ? certificates
-      : certificates.slice(0, 3)
-    : certificates;
+  const displayed =
+    isMobile && !showAll ? certificates.slice(0, MOBILE_LIMIT) : certificates;
 
   return (
-    <section className={styles.container} id="certifications">
-      <h2 className={styles.title}>Certifications</h2>
-      <div className={styles.content}>
-        {displayedCertificates.map((certificate, id) => {
-          return (
-            <div
-              key={id}
-              className={styles.certificate}
-              onClick={() => window.open(certificate.source, "_blank")}
-              style={{ cursor: "pointer" }}
-            >
+    <section className="page-section" id="certifications">
+      <div className="section-head reveal">
+        <span className="eyebrow">Certifications</span>
+        <h2 className="section-title">Always learning.</h2>
+        <p className="section-sub">
+          Courses and credentials. Tap any card to view the certificate.
+        </p>
+      </div>
+
+      <div className={styles.grid}>
+        {displayed.map((certificate, id) => (
+          <a
+            key={id}
+            href={certificate.source}
+            target="_blank"
+            rel="noreferrer"
+            className={`glass glass-interactive ${styles.certificate}`}
+            aria-label={`View ${certificate.title} certificate${
+              certificate.organization ? ` from ${certificate.organization}` : ""
+            }`}
+          >
+            <div className={styles.imageWrap}>
               <img
                 src={getImageUrl(certificate.imageSrc)}
-                alt={`Certificate of ${certificate.title}`}
+                alt=""
                 className={styles.image}
+                loading="lazy"
               />
             </div>
-          );
-        })}
-
-        {isMobile && (
-          <div
-            className={styles.seeMore}
-            onClick={() => setShowAll(!showAll)}
-            style={{ cursor: "pointer" }}
-          >
-            {showAll ? "See Less" : "See More"}
-          </div>
-        )}
+            <div className={styles.meta}>
+              <span className={styles.name}>{certificate.title}</span>
+              {certificate.organization && (
+                <span className={styles.org}>{certificate.organization}</span>
+              )}
+            </div>
+          </a>
+        ))}
       </div>
+
+      {isMobile && certificates.length > MOBILE_LIMIT && (
+        <div className={styles.moreRow}>
+          <button
+            type="button"
+            className="btn btn-glass"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Show less" : `Show all ${certificates.length}`}
+          </button>
+        </div>
+      )}
     </section>
   );
 }

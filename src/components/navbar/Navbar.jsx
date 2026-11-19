@@ -1,48 +1,88 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils";
+
+const links = [
+  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#certifications", label: "Certifications" },
+  { href: "#contact", label: "Contact" },
+];
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const onKey = (e) => e.key === "Escape" && setMenuOpen(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   return (
-    <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        Portfolio
-      </a>
-      <div className={styles.menu}>
-        <img
-          className={styles.menuBtn}
-          src={
-            menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
-          }
-          alt="menu-button"
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
+    <header className={styles.wrap}>
+      <nav
+        className={`${styles.navbar} ${scrolled ? styles.scrolled : ""} ${
+          menuOpen ? styles.open : ""
+        }`}
+        aria-label="Main"
+      >
+        <div className={styles.bar}>
+          <a className={styles.title} href="#top">
+            <span className={styles.logoDot} aria-hidden="true" />
+            Huzaifa
+          </a>
+
+          <ul className={styles.desktopItems}>
+            {links.map((l) => (
+              <li key={l.href}>
+                <a href={l.href}>{l.label}</a>
+              </li>
+            ))}
+          </ul>
+
+          <a
+            className={`btn btn-primary ${styles.cta}`}
+            href="mailto:contact@huzaifakhan.com"
+          >
+            Hire me
+          </a>
+
+          <button
+            type="button"
+            className={styles.menuBtn}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span />
+            <span />
+          </button>
+        </div>
+
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+          id="mobile-menu"
+          className={styles.mobileItems}
           onClick={() => setMenuOpen(false)}
         >
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#certifications">Certifications</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          {links.map((l) => (
+            <li key={l.href}>
+              <a href={l.href} tabIndex={menuOpen ? 0 : -1}>
+                {l.label}
+              </a>
+            </li>
+          ))}
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
 
