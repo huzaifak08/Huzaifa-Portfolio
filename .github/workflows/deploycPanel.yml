@@ -3,11 +3,18 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch: # allow manual re-deploys from the Actions tab
+
+# Never run two FTP deploys at once; a newer push replaces a queued one.
+concurrency:
+  group: ftp-deploy
+  cancel-in-progress: false
 
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
@@ -17,21 +24,57 @@ jobs:
       - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20" # Use the version you use locally
+          node-version: "20"
+          cache: npm
 
       - name: 🔨 Build Project
         run: |
-          npm install
+          npm ci
           npm run build
-        # This MUST finish without errors for the next step to work
 
+      # FTP connections to shared hosting drop now and then, so try up to
+      # three times with a longer timeout before failing the deploy.
       - name: 📂 Sync files
+        id: sync1
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # CHANGE THIS BELOW: Use ./dist/ if you are using Vite
           local-dir: ./dist/
           server-dir: ./
-          dangerous-clean-slate: true
+          timeout: 120000
+
+      - name: ⏳ Wait before retry
+        if: steps.sync1.outcome == 'failure'
+        run: sleep 30
+
+      - name: 📂 Sync files (retry 1)
+        id: sync2
+        if: steps.sync1.outcome == 'failure'
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./
+          timeout: 120000
+
+      - name: ⏳ Wait before final retry
+        if: steps.sync2.outcome == 'failure'
+        run: sleep 60
+
+      - name: 📂 Sync files (retry 2)
+        if: steps.sync2.outcome == 'failure'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./
+          timeout: 120000
+          log-level: verbose
